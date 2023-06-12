@@ -1,0 +1,185 @@
+ *{background-color: beige;
+    box-sizing: border-box;   }
+
+.box{
+    background-color: brown;
+    margin: auto;
+    max-width: 50%;
+    text-align: center;
+    border: black 2px solid;
+    padding: 10px;
+    border-top-right-radius: 40px;
+    border-top-left-radius:-40px;
+}
+.text{
+    font-size: 2rem;
+}
+
+.dox{
+    background-color: aqua;
+    height: 160px;
+    width: 800px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    
+}
+
+.child{
+    background-color: rgb(44, 31, 31,0.5);
+    width:400px;
+    box-sizing: border-box;
+    margin-left: 30%;
+    z-index:+2;
+    color: aliceblue;
+}
+
+.wild{
+    box-sizing: border-box;
+    background-color: rgb(136, 123, 12,0.7);
+    margin-right: 70%;
+    z-index: +1;
+    color: azure;
+
+    
+}
+
+.wild:hover{
+    background-color: rgb(86, 86, 86,0.4);
+    outline:  white solid 5px;
+    
+    
+
+    
+}
+
+.big:hover{
+    
+    font-size: 2rem;
+    margin-bottom: 50px;
+
+    
+}
+
+.xyz :blank{
+    color: aqua;
+}
+input:invalid{
+    outline: 2px solid red;
+}
+input:valid{
+    outline: 4px solid rgb(44, 119, 52);
+}
+
+form.xyz{
+    max-width: 400px;
+    margin:auto;
+    padding: 20px;
+    border: 2px solid green;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+.xyz label{
+    display: block;
+    font-weight: 500;
+}
+
+.xyz #fnf, #faf, button, #ff, #ff1, #ff2, #ff3, #ff4, #ff5{
+    width: 100%;
+    margin: 5px;
+}
+body{
+    color: black;
+    font-size: medium;
+}
+
+.uu{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin-left:revert;
+    padding-left: 0%;
+}
+.uu> #m{
+    margin-right: 15px;
+}
+.uu> #m:last-child{
+    margin-right:revert;
+}
+#bt{
+    display: none;
+}
+@media print{
+    body{
+        background: rgb(85, 74, 74);
+    }
+}
+.menu{
+    display:none;
+}
+/* @media screen and (orientation: landscape) {
+    
+    body::after{
+        top:100px;
+        content: "Landscape Mode";
+        z-index: 1;
+    }
+    
+}
+@media screen and (orientation: portrait) {
+    
+    body::after{
+        content: "portarit Mode";
+        z-index: 1;
+    }
+    
+} */
+@media screen and (width<500px){
+    .uu{
+        display:none;
+
+    }
+   
+    #bt{
+        display: block;
+        background: transparent;
+        border-radius: 10px;
+        margin-left: auto;
+    }
+    .menu{
+        display:revert;
+        height: 0px;
+        overflow: hidden;
+        width: 100%;
+        z-index: 2;
+        position: fixed;
+        top: 0;
+        left: 0;
+        transition: height 0.5s;
+    }
+    #ll{
+        position:absolute;
+        top:16px;
+        left: auto;
+        right:40px;
+        background: transparent;
+        color: aliceblue;
+        font-size: larger;
+        text-shadow: none;
+    }
+    .menu ul>li{
+       margin-bottom:15px;
+       list-style: none;
+       
+    }
+    .menu ul>li:first-child{
+        margin-top: 40px;
+    }
+    
+}
+
+
+.mobile #bt:hover{
+   
+    background: black;
+}
