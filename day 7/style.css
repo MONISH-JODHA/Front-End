@@ -1,0 +1,21 @@
+body{
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    margin:100px auto;
+    height: 300px;
+    width: 300px;
+    background: royalblue;
+    transition-property: transform;
+    transition-duration: 900ms;
+    transition-delay:0.1s;
+    transition-timing-function: cubic-bezier(0.77, 0.23, 0.17, 1);
+    width :.9s;
+    
+}
+.box:hover{
+    transform: translateX(50px) scale(2.3) translateY(70px);
+    width:600px
+}
