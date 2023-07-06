@@ -22,6 +22,7 @@ function mj(x,y){
     
         console.log(this.surname + this.printname())
         console.log(x+y);
+        console.log(this.surname,x)
     }
 
 
@@ -30,4 +31,15 @@ function mj(x,y){
 
 // let jodha1=mj.call(monish,1,1);
 
-let jodha2=mj.apply(monish,[5,5]);
+// let jodha2=mj.apply(monish,[5,5]);
+
+function sum(){
+    let total=0;
+    for(let i=0;i<arguments.length;i++){
+        
+       total+=arguments[i]
+        
+    }return total;
+}
+console.log(sum(1,2,3,4,5,5))
+
