@@ -43,3 +43,17 @@ function mj(x,y){
 // }
 // console.log(sum(1,2,3,4,5,5));
 
+Array.prototype.odd=function () {
+
+    return this.filter(function (item){
+                      
+                      return item % 2 !== 0
+                      })
+}
+Array.prototype.even=function () {
+
+    return this.filter(function (item){
+                      
+                      return item % 2 === 0
+                      })
+}
